@@ -14,7 +14,8 @@ const App = () => {
 
   return (
     <div className="parent">
-      <h1>Selected Option: {selectedOption || "None"}</h1>
+      <h1>Parent Component</h1>
+      <p>{`Selected Option: ${selectedOption || "None"}`}</p>
 
       <ChildComponent1 onSelect={handleOptionChange} />
       <ChildComponent2 onSelect={handleOptionChange} />
